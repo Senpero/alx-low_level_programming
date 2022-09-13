@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 /**
  * main - Program prints all possible different combinations of
  * two digits numbers
@@ -11,25 +9,27 @@
 
 int main(void)
 
-{	
-        int m = '0', n;
+{
+	int a = '0', b;
 
-	while (m <= '9')
+	while (a <= '9')
 	{
-			n = '0';
-			while (n <= '9')
+		b = '0';
+		while (b <= '9')
+		{
+			if (b > a)
 			{
-					if (n > m)
-		 			{
-						putchar(m);
-						putchar(n);																		 if (m != '8' || n != '9')
-						{
-							putchar(',');
-				                        putchar(' ');																	 }
-					}
-					n++;
+				putchar(a);
+				putchar(b);
+				if (a != '8' || b != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			m++;
+			b++;
+		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
