@@ -5,11 +5,11 @@
  *
  * Return: Always 0
  */
-main()
+int main(void)
 {
-	char _putchar;
+	int a = _putchar;
 
-	printf("Display the word: %c.\n");
+	printf("Display the word: %d.\n"; a);
 
 	return (0);
 }
