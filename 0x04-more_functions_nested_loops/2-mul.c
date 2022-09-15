@@ -3,15 +3,15 @@
 /**
  * mul - a function that multiplies two integers
  *
- * @a: first integer variable
- * @b: second integer variable
+ * @a: type integer variable
+ * @b: type integer variable
  *
  * Return: multiplication value
  */
 int mul(int a, int b)
 {
-	int a;
-	int b;
+	int mul;
 
-	return (a * b);
+	mul = a * b;
+	return (mul);
 }
