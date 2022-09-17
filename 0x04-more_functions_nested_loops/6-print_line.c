@@ -2,18 +2,17 @@
 
 /**
  * print_line - function prints lines instead of numbers
- * @n: type integer variable
+ * @n: type integer variable for straight line
  *
  * Return: void
  */
 void print_line(int n)
 {
-	int a;
+	int i;
 
-	while (a < n)
+	for (i = 0; i < n; i++)
 	{
-		_putchar('_');
-		a++;
+		_putchar(95);
 	}
 	_putchar('\n');
 }
