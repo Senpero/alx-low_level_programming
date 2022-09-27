@@ -8,19 +8,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	char chr;
 	int index;
 
-	for (index = 0; s[index] != '\0'; index++)
+	for (index = 0; s[index] >= '\0'; index++)
 	{
-		if (chr == c)
+		if (s[index] == c)
 		{
-			_putchar(s[index]);
-		}
-		else
-		{
-			return (NULL);
+			return (s[index]);
 		}
 	}
-	return (s);
+	return (NULL);
 }
