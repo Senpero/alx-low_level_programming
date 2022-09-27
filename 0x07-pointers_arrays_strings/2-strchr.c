@@ -2,9 +2,9 @@
 
 /**
  * _strchr - a function that locates a character in a string
- * @c: character
- * @s: string
- * Return: a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
+ * @c: constant
+ * @s: pointer to put the constant
+ * Return: s
  */
 char *_strchr(char *s, char c)
 {
@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[index] == c)
 		{
-			return (s[index]);
+			return (s + index);
 		}
 	}
 	return ('\0');
